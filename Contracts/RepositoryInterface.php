@@ -1,6 +1,6 @@
 <?php
 
-namespace Pingpong\Modules\Contracts;
+namespace Avantinternet\Modules\Contracts;
 
 interface RepositoryInterface
 {
@@ -28,7 +28,7 @@ interface RepositoryInterface
     /**
      * Get modules as modules collection instance.
      *
-     * @return \Pingpong\Modules\Collection
+     * @return \Avantinternet\Modules\Collection
      */
     public function toCollection();
 

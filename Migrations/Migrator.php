@@ -1,15 +1,15 @@
 <?php
 
-namespace Pingpong\Modules\Migrations;
+namespace Avantinternet\Modules\Migrations;
 
-use Pingpong\Modules\Module;
+use Avantinternet\Modules\Module;
 
 class Migrator
 {
     /**
-     * Pingpong Module instance.
+     * Avantinternet Module instance.
      *
-     * @var \Pingpong\Modules\Module
+     * @var \Avantinternet\Modules\Module
      */
     protected $module;
 
@@ -23,7 +23,7 @@ class Migrator
     /**
      * Create new instance.
      *
-     * @param \Pingpong\Modules\Module $module
+     * @param \Avantinternet\Modules\Module $module
      */
     public function __construct(Module $module)
     {

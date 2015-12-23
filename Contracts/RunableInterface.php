@@ -1,6 +1,6 @@
 <?php
 
-namespace Pingpong\Modules\Contracts;
+namespace Avantinternet\Modules\Contracts;
 
 interface RunableInterface
 {

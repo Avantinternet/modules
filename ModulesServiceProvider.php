@@ -1,10 +1,9 @@
 <?php
 
-namespace Pingpong\Modules;
-
+namespace Avantinternet\Modules;
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\ServiceProvider;
-use Pingpong\Support\Stub;
+use Avantinternet\Support\Stub;
 
 class ModulesServiceProvider extends ServiceProvider
 {
@@ -21,7 +20,6 @@ class ModulesServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->registerNamespaces();
-
         $this->registerModules();
     }
 
@@ -30,7 +28,7 @@ class ModulesServiceProvider extends ServiceProvider
      */
     protected function registerModules()
     {
-        $this->app->register('Pingpong\Modules\Providers\BootstrapServiceProvider');
+        $this->app->register('Avantinternet\Modules\Providers\BootstrapServiceProvider');
     }
 
     /**
@@ -79,7 +77,7 @@ class ModulesServiceProvider extends ServiceProvider
         $aliases = [
             'HTML' => 'Collective\Html\HtmlFacade',
             'Form' => 'Collective\Html\FormFacade',
-            'Module' => 'Pingpong\Modules\Facades\Module',
+            'Module' => 'Avantinternet\Modules\Facades\Module',
         ];
 
         AliasLoader::getInstance($aliases)->register();
@@ -90,7 +88,7 @@ class ModulesServiceProvider extends ServiceProvider
      */
     protected function registerServices()
     {
-        $this->app->bindShared('modules', function ($app) {
+        $this->app->singleton('modules', function ($app) {
             $path = $app['config']->get('modules.paths.modules');
 
             return new Repository($app, $path);
@@ -113,6 +111,6 @@ class ModulesServiceProvider extends ServiceProvider
     protected function registerProviders()
     {
         $this->app->register(__NAMESPACE__.'\\Providers\\ConsoleServiceProvider');
-        $this->app->register('Pingpong\Modules\Providers\ContractsServiceProvider');
+        $this->app->register('Avantinternet\Modules\Providers\ContractsServiceProvider');
     }
 }

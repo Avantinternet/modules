@@ -1,6 +1,6 @@
 <?php
 
-namespace Pingpong\Modules\Generators;
+namespace Avantinternet\Modules\Generators;
 
 use Illuminate\Filesystem\Filesystem;
 

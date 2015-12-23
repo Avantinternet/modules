@@ -1,10 +1,10 @@
 <?php
 
-namespace Pingpong\Modules\Commands;
+namespace Avantinternet\Modules\Commands;
 
 use Illuminate\Console\Command;
-use Pingpong\Modules\Migrations\Migrator;
-use Pingpong\Modules\Traits\MigrationLoaderTrait;
+use Avantinternet\Modules\Migrations\Migrator;
+use Avantinternet\Modules\Traits\MigrationLoaderTrait;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
 

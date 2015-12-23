@@ -1,10 +1,10 @@
 <?php
 
-namespace Pingpong\Modules\Commands;
+namespace Avantinternet\Modules\Commands;
 
 use Illuminate\Console\Command;
-use Pingpong\Modules\Module;
-use Pingpong\Modules\Publishing\LangPublisher;
+use Avantinternet\Modules\Module;
+use Avantinternet\Modules\Publishing\LangPublisher;
 use Symfony\Component\Console\Input\InputArgument;
 
 class PublishTranslationCommand extends Command

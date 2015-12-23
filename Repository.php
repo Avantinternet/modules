@@ -1,14 +1,14 @@
 <?php
 
-namespace Pingpong\Modules;
+namespace Avantinternet\Modules;
 
 use Countable;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Str;
-use Pingpong\Modules\Contracts\RepositoryInterface;
-use Pingpong\Modules\Exceptions\ModuleNotFoundException;
-use Pingpong\Modules\Process\Installer;
-use Pingpong\Modules\Process\Updater;
+use Avantinternet\Modules\Contracts\RepositoryInterface;
+use Avantinternet\Modules\Exceptions\ModuleNotFoundException;
+use Avantinternet\Modules\Process\Installer;
+use Avantinternet\Modules\Process\Updater;
 
 class Repository implements RepositoryInterface, Countable
 {

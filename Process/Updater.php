@@ -1,6 +1,6 @@
 <?php
 
-namespace Pingpong\Modules\Process;
+namespace Avantinternet\Modules\Process;
 
 class Updater extends Runner
 {

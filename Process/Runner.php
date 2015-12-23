@@ -1,23 +1,23 @@
 <?php
 
-namespace Pingpong\Modules\Process;
+namespace Avantinternet\Modules\Process;
 
-use Pingpong\Modules\Contracts\RunableInterface;
-use Pingpong\Modules\Repository;
+use Avantinternet\Modules\Contracts\RunableInterface;
+use Avantinternet\Modules\Repository;
 
 class Runner implements RunableInterface
 {
     /**
      * The module instance.
      *
-     * @var \Pingpong\Modules\Repository
+     * @var \Avantinternet\Modules\Repository
      */
     protected $module;
 
     /**
      * The constructor.
      *
-     * @param \Pingpong\Modules\Repository $module
+     * @param \Avantinternet\Modules\Repository $module
      */
     public function __construct(Repository $module)
     {

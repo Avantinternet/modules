@@ -1,6 +1,6 @@
 <?php
 
-namespace Pingpong\Modules\Providers;
+namespace Avantinternet\Modules\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -18,7 +18,7 @@ class ConsoleServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    protected $namespace = 'Pingpong\\Modules\\Commands\\';
+    protected $namespace = 'Avantinternet\\Modules\\Commands\\';
 
     /**
      * The available command shortname.

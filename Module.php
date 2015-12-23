@@ -1,6 +1,6 @@
 <?php
 
-namespace Pingpong\Modules;
+namespace Avantinternet\Modules;
 
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Foundation\Application;

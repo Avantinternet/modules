@@ -1,10 +1,10 @@
 <?php
 
-namespace Pingpong\Modules\Commands;
+namespace Avantinternet\Modules\Commands;
 
 use Illuminate\Console\Command;
-use Pingpong\Modules\Process\Installer;
-use Pingpong\Support\Json;
+use Avantinternet\Modules\Process\Installer;
+use Avantinternet\Support\Json;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
 
