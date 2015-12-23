@@ -1,12 +1,12 @@
 <?php
 
-namespace Pingpong\Modules\Commands;
+namespace Avantinternet\Modules\Commands;
 
 use Illuminate\Support\Str;
-use Pingpong\Generators\Migrations\NameParser;
-use Pingpong\Generators\Migrations\SchemaParser;
-use Pingpong\Support\Stub;
-use Pingpong\Modules\Traits\ModuleCommandTrait;
+use Avantinternet\Generators\Migrations\NameParser;
+use Avantinternet\Generators\Migrations\SchemaParser;
+use Avantinternet\Support\Stub;
+use Avantinternet\Modules\Traits\ModuleCommandTrait;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace Pingpong\Modules\Commands;
+namespace Avantinternet\Modules\Commands;
 
 use Illuminate\Console\Command;
-use Pingpong\Modules\Migrations\Migrator;
+use Avantinternet\Modules\Migrations\Migrator;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
 
@@ -24,7 +24,7 @@ class MigrateCommand extends Command
     protected $description = 'Migrate the migrations from the specified module or from all modules.';
 
     /**
-     * @var \Pingpong\Modules\Repository
+     * @var \Avantinternet\Modules\Repository
      */
     protected $module;
 
@@ -76,7 +76,7 @@ class MigrateCommand extends Command
     /**
      * Get migration path for specific module.
      *
-     * @param  \Pingpong\Modules\Module $module
+     * @param  \Avantinternet\Modules\Module $module
      * @return string
      */
     protected function getPath($module)

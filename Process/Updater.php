@@ -1,6 +1,6 @@
 <?php
 
-namespace Pingpong\Modules\Process;
+namespace Avantinternet\Modules\Process;
 
 class Updater extends Runner
 {
@@ -13,7 +13,7 @@ class Updater extends Runner
     {
         $module = $this->module->findOrFail($module);
 
-        $packages = $module->get('require', []);
+        $packages = $module->getComposerAttr('require', []);
 
         chdir(base_path());
 

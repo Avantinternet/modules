@@ -1,9 +1,9 @@
 <?php
 
-namespace Pingpong\Modules\Commands;
+namespace Avantinternet\Modules\Commands;
 
 use Illuminate\Console\Command;
-use Pingpong\Modules\Traits\ModuleCommandTrait;
+use Avantinternet\Modules\Traits\ModuleCommandTrait;
 use Symfony\Component\Console\Input\InputArgument;
 
 class UpdateCommand extends Command

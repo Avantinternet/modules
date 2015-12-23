@@ -1,9 +1,9 @@
 <?php
 
-namespace Pingpong\Modules\Commands;
+namespace Avantinternet\Modules\Commands;
 
-use Pingpong\Support\Stub;
-use Pingpong\Modules\Traits\ModuleCommandTrait;
+use Avantinternet\Support\Stub;
+use Avantinternet\Modules\Traits\ModuleCommandTrait;
 use Symfony\Component\Console\Input\InputArgument;
 
 class ControllerCommand extends GeneratorCommand
@@ -55,7 +55,7 @@ class ControllerCommand extends GeneratorCommand
         return (new Stub('/controller.stub', [
             'MODULENAME'        => $module->getStudlyName(),
             'CONTROLLERNAME'    => $this->getControllerName(),
-            'NAMESPACE'         => $module->getLowername(),
+            'NAMESPACE'         => $module->getStudlyName(),
             'CLASS_NAMESPACE'   => $this->getClassNamespace($module),
             'CLASS'             => $this->getClass(),
             'LOWER_NAME'        => $module->getLowerName(),

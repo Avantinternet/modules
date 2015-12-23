@@ -1,14 +1,14 @@
 <?php
 
-namespace Pingpong\Modules;
+namespace Avantinternet\Modules;
 
 use Countable;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Str;
-use Pingpong\Modules\Contracts\RepositoryInterface;
-use Pingpong\Modules\Exceptions\ModuleNotFoundException;
-use Pingpong\Modules\Process\Installer;
-use Pingpong\Modules\Process\Updater;
+use Avantinternet\Modules\Contracts\RepositoryInterface;
+use Avantinternet\Modules\Exceptions\ModuleNotFoundException;
+use Avantinternet\Modules\Process\Installer;
+use Avantinternet\Modules\Process\Updater;
 
 class Repository implements RepositoryInterface, Countable
 {
@@ -160,7 +160,9 @@ class Repository implements RepositoryInterface, Countable
         foreach ($cached as $name => $module) {
             $path = $this->config('paths.modules').'/'.$name;
 
-            $modules[] = new Module($this->app, $name, $path);
+            $lowerName = strtolower($name);
+
+            $modules[$name] = new Module($this->app, $lowerName, $path);
         }
 
         return $modules;

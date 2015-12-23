@@ -1,11 +1,11 @@
 <?php
 
-namespace Pingpong\Modules\Publishing;
+namespace Avantinternet\Modules\Publishing;
 
 use Illuminate\Console\Command;
-use Pingpong\Modules\Contracts\PublisherInterface;
-use Pingpong\Modules\Module;
-use Pingpong\Modules\Repository;
+use Avantinternet\Modules\Contracts\PublisherInterface;
+use Avantinternet\Modules\Module;
+use Avantinternet\Modules\Repository;
 
 abstract class Publisher implements PublisherInterface
 {
@@ -19,7 +19,7 @@ abstract class Publisher implements PublisherInterface
     /**
      * The modules repository instance.
      *
-     * @var \Pingpong\Modules\Repository
+     * @var \Avantinternet\Modules\Repository
      */
     protected $repository;
 
@@ -88,7 +88,7 @@ abstract class Publisher implements PublisherInterface
     /**
      * Get module instance.
      *
-     * @return \Pingpong\Modules\Module
+     * @return \Avantinternet\Modules\Module
      */
     public function getModule()
     {
@@ -98,7 +98,7 @@ abstract class Publisher implements PublisherInterface
     /**
      * Set modules repository instance.
      *
-     * @param \Pingpong\Modules\Repository $repository
+     * @param \Avantinternet\Modules\Repository $repository
      *
      * @return $this
      */
@@ -112,7 +112,7 @@ abstract class Publisher implements PublisherInterface
     /**
      * Get modules repository instance.
      *
-     * @return \Pingpong\Modules\Repository
+     * @return \Avantinternet\Modules\Repository
      */
     public function getRepository()
     {

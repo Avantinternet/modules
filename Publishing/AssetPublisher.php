@@ -1,6 +1,6 @@
 <?php
 
-namespace Pingpong\Modules\Publishing;
+namespace Avantinternet\Modules\Publishing;
 
 class AssetPublisher extends Publisher
 {

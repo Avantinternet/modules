@@ -1,6 +1,6 @@
 <?php
 
-namespace Pingpong\Modules\Traits;
+namespace Avantinternet\Modules\Traits;
 
 trait ModuleCommandTrait
 {
